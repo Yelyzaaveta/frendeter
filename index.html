@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter to FRENDMETER</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="title-text">
+        <div class="title login">
+            Login Here
+        </div>
+        <div class="title signup">
+            Create an Acc
+        </div>
+    </div>
+
+    <div class="loader hide-loader" id="loader"></div>
+    <div class="message hide-message" id="message"><br>Welcome to
+    <br>FRENDMETER</div>
+
+    <div class="form-container">
+
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+        </div>
+
+        <div class="form-inner">
+
+            <form action="#" class="login">
+                <div class="field">
+                    <label for="Username"></label>
+                    <input type="text" id="Username" name="usernameInputLogin" placeholder="Username">
+                </div>
+                <div class="error-msg" id="login-username-error"></div>
+                <div class="field password password-wrapper">
+                    <label for="password"></label>
+                    <input type="password"  id="password" name="passwordInputLogin" placeholder="Password">
+                    <i id="loginPasswordToggleBtn" class="fas fa-eye-slash togglePassword"></i>
+                </div>
+                <div class="error-msg" id="login-password-error"></div>
+                <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer "></div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                </div>
+            </form>
+
+
+            <form action="#" class="signup">
+                <div class="field">
+                    <label for="signup-username"></label>
+                    <input type="text" id="signup-username" name="signup-username" placeholder="Username">
+                </div>
+                <div class="error-msg" id="signup-username-error"></div>
+                <div class="field">
+                    <label for="signup-email"></label>
+                    <input type="text" id="signup-email" name="signup-email" placeholder="Email Address">
+                </div>
+                <div class="error-msg" id="signup-email-error"></div>
+
+                <div class="field password password-wrapper" >
+                    <label for="passwordInput"></label>
+                    <input type="password" id="passwordInput" name="passwordInput" placeholder="Password">
+                    <i id="passwordToggleBtn" class="fas fa-eye-slash togglePassword"></i>
+                </div>
+                <div class="error-msg" id="signup-password-error"></div>
+                <div class="field password password-wrapper">
+                    <label for="confirmPasswordInput"></label>
+                    <input type="password" id="confirmPasswordInput" name="confirmPasswordInput" placeholder="Confirm password">
+                    <i id="confirmPasswordToggleBtn" class="fas fa-eye-slash togglePassword"></i>
+                </div>
+
+                <div class="error-msg" id="signup-confirm-password-error"></div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
+

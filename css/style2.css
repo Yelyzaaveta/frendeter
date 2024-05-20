@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    align-content: center;
+    background-color: #8c87cc;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to top, #8c87cc, #a445b2);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+header button, header input {
+    margin: 0 40px 0 0.5rem;
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: -webkit-linear-gradient(45deg, #8c87cc, #fa4299,#fa4299, #8c87cc);
+    width: 230px;
+    height: 450px;
+
+}
+.card img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+.card h3 {
+    margin: 0.5rem 0;
+}
+.card p {
+    margin: 0.25rem 0;
+}
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fc83bb;
+}
+#filterMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background: linear-gradient(to top, #fa4299, #a445b2, #8c87cc);
+}
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filterBtn, .log-out-btn {
+    background: linear-gradient(to right, #8c87cc, #fa4299, #fa4299, #8c87cc);
+    border-radius: 5px;
+    z-index: 1;
+    width: 15%;
+    height: 30px;
+    font-weight: bold;
+    color: #ffe8fe;
+    cursor: pointer;
+    border-color: #ffe8fe;
+}
+
+.filterBtn:hover, .log-out-btn:hover {
+    background: linear-gradient(to right, #8c87cc, #a445b2, #8c87cc);
+    border-color: #fa4299;
+}
+
+.search-input{
+    border-radius: 15px;
+    padding: 3px 3px 3px 10px;
+    width: 26%;
+    height: 20px;
+    border-color: #ffe8fe;
+    background-color: #ffe8fe;
+}
+
+.search-input:hover{
+    background-color: #fc83bb;
+    border-color: #fa4299;
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    background-color: #ffe8fe;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+hr{
+    width: 240px;
+    background-color: #a445b2;
+    height: 2px;
+    border: none;
+    margin: 0 0 10px;
+}
+
+.description{
+    background-color: rgba(252, 131, 187, 0.5);
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filters{
+    background-color: rgba(252, 131, 187, 0.5);
+}
+.menu-frendmeter{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    color: #a445b2;
+    font-size: 20px;
+ }
+.hobbies>p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hobbies>ul{
+    margin-top: 0;
+    list-style-type: circle;
+}
+
+#filterMenu > button{
+    background: linear-gradient(to right, #8c87cc, #fa4299, #fa4299, #8c87cc);
+    border-radius: 5px;
+    z-index: 1;
+    width: 240px;
+    height: 30px;
+    font-weight: bold;
+    color: #ffe8fe;
+    cursor: pointer;
+    border-color: #ffe8fe;
+    margin: 30px;
+}
+
+#filterMenu > button:hover{
+    border-color: #a445b2;
+}
+
+#sort, #sort > option{
+    background-color: #fc83bb;
+}
+#sort{
+    margin-left: 30px;
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#filterMenu > label{
+    margin-left: 30px;
+
+}
+
+#filterMenu > input{
+    width: 100px;
+    border-radius: 5px;
+    background-color: #fc83bb;
+    border: none;
+    height: 20px;
+}
+
+#filterMenu > input:hover{
+    width: 100px;
+    background-color: #fa4299;
+}
+
+.close-btn-inner{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+.close-btn-inner:hover{
+    color: #fa4299;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    display: none;
+}

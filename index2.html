@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRENDMETER</title>
+    <link rel="stylesheet" href="css/style2.css" />
+</head>
+<body>
+
+<div id="main">
+    <header>
+        <button id="filterBtn" class="filterBtn">=</button>
+        <input class="search-input" id="search-input" type="text" placeholder="Enter name here...">
+        <button class ="log-out-btn" id="logOutBtn">Вийти</button>
+    </header>
+
+    <div class="container card-container" id="cardContainer">
+    </div>
+    <div id="loading" class="loading">Loading...</div>
+    <footer>
+        <p>
+            <a href="https://suppoertpffrendmeter.com" target="_blank">Техпідтримка</a>
+            <p>FRENDMETER</p>
+        </p>
+    </footer>
+
+
+</div>
+<div id="filterMenu">
+
+    <div class="close-btn">
+        <button class="close-btn-inner" id="toggleButtonClose">×</button>
+    </div>
+
+    <h3>Сортування</h3>
+    <label for="sort">Оберіть тип</label>
+    <br>
+    <select id="sort">
+        <option value="younger">Вік (спочатку молодші)</option>
+        <option value="older">Вік (спочатку старші)</option>
+        <option value="alphabet_a">За алфавітом (A-Z)</option>
+        <option value="alphabet_z">За алфавітом (Z-A)</option>
+        <option value="date_new">Дата реєстреції (від новішої)</option>
+        <option value="date_old">Дата реєстреції (від старішої)</option>
+    </select>
+    <button class ="sort-btn">Відсортувати</button>
+    <br>
+
+    <h3>Фільтрація:</h3>
+    <label for="filterAgeFrom">Вік від - </label>
+    <input type="number" id="filterAgeFrom">
+    <br>
+    <br>
+    <label for="filterAgeTo">до - </label>
+    <input type="number" id="filterAgeTo">
+    <br>
+    <br>
+    <label for="filterName">Ім'я - </label>
+    <input type="text" id="filterName">
+    <br>
+    <br>
+    <label for="filterLocation">Країна - </label>
+    <input type="text" id="filterLocation">
+    <br>
+    <br>
+    <button class="filtering-btn">Відфільтрувати</button>
+
+    <p class="menu-frendmeter">FRENDMETER</p>
+</div>
+
+
+<script src="js/script2.js"></script>
+</body>
+</html>
